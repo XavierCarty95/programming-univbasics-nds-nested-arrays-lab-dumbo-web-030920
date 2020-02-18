@@ -50,3 +50,4 @@ def matrix_update(matrix, row, column, new_value)
 end
 
 print assembled_matrix
+print sorted_matrix
