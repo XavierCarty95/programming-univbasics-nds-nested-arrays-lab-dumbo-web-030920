@@ -47,4 +47,4 @@ def matrix_update(matrix, row, column, new_value)
   matrix[row][column] = new_value
 end
 
-print sorted_matrix
+print assembled_matrix
