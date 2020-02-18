@@ -21,7 +21,7 @@ def assembled_matrix
   # This matrix will represent a produce storage room
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
-  produce = [ORGANIC_PRODUCE , CONVENTIONAL_PRODUCE]
+  produce = [CONVENTIONAL_PRODUCE , ORGANIC_PRODUCE]
   produce
 end
 
@@ -37,6 +37,7 @@ def matrix_lookup(matrix, row, column)
   # Given any matrix (array of arrays), a row index and a column index,
   # Return the matrix's content at that row and and column
   matrix[row][column]
+  
 end
 
 def matrix_update(matrix, row, column, new_value)
@@ -45,6 +46,7 @@ def matrix_update(matrix, row, column, new_value)
   # Return the updated matrix
 
   matrix[row][column] = new_value
+  matrix
 end
 
 print assembled_matrix
